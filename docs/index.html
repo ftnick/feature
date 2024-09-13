@@ -1,58 +1,125 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="light dark">
-    <title>Feature Framework</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-  </head>
-  <body>
-    <main class="container">
-      <h1>Feature (fē-uh-tor) Framework</h1>
+<html>
 
-      <h2>Overview</h2>
-      <p>Feature is an open-source framework designed to assist in various programming tasks, such as calculations, functions, scripts, models, and more. All functionalities are easily accessible through the <code>require.py</code> module, making it the core utility for including features in your projects.</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XYZ Documentation</title>
 
-      <h2>Key Features</h2>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900">
+
+  <link rel="stylesheet" href="./resources/css/console-global.css">
+  <link rel="stylesheet" href="./resources/css/console-main.css">
+</head>
+
+<body>
+  <div class="doc__bg"></div>
+  <nav class="header">
+    <h1 class="logo">Scribbler <span class="logo__thin">Doc</span></h1>
+    <ul class="menu">
+      <div class="menu__item toggle"><span></span></div>
+      <li class="menu__item"><a href="index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+      <!--<li class="menu__item"><a href="" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>-->
+    </ul>
+  </nav>
+  <div class="wrapper">
+    <aside class="doc__nav">
       <ul>
-        <li><strong>Calculations:</strong> A collection of mathematical and statistical utilities.</li>
-        <li><strong>Functions:</strong> Reusable functions for various use cases.</li>
-        <li><strong>Scripts:</strong> Pre-built scripts for common tasks.</li>
-        <li><strong>Models:</strong> Access to models for data processing, machine learning, etc.</li>
-        <li><strong>Simple Access:</strong> Load any of these via <code>require.py</code>.</li>
+        <li class="js-btn selected">Get Started</li>
+        <li class="js-btn">Configuration</li>
+        <li class="js-btn">Keybindings</li>
+        <li class="js-btn">Issues</li>
       </ul>
+    </aside>
+    <article class="doc__content">
+      <section class="js-section">
+        <h3 class="section__title">Get Started</h3>
+        <p>Learn how to configure settings for Scribbler, such as your syntax highlighting preference and the default
+          saving folder location.</p>
+        <h3 class="section__title">Installation</h3>
+        <div class="code__block code__block--notabs">
+          <pre class="code code--block">
+              <code>
+                $ scribbler  ——config
+                  {
+                    “encryption”: true, 
+                    “highlighting“: true,
+                    “prettyTable”: false,
+                    “font”: [“Helvetica”, “sans-serif”],
+                    “folder”: “~/Desktop“
+                  }
+              </code>
+            </pre>
+        </div>
+      </section>
+      <section class="js-section">
+        <h3 class="section__title">Configuration</h3>
+        <p>Learn how to configure settings for Scribbler, such as your syntax highlighting preference and the default
+          saving folder location.</p>
+        <table id="customers">
+          <tr>
+            <th>Options</th>
+            <th>Value</th>
+            <th>Default</th>
+          </tr>
+          <tr>
+            <td>encryption</td>
+            <td>encrypt all notes before saving. If turned on, it requires password to open the file.</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>highlighting</td>
+            <td>Show syntax highlight on markdown text.</td>
+            <td>true</td>
+          </tr>
+          <tr>
+            <td>prettyTable</td>
+            <td>Render table with Scribbler’s pretty table style.</td>
+            <td>true</td>
+          </tr>
+        </table>
+        <p>Malis percipitur an pro. Pro aperiam persequeris at, at sonet sensibus mei, id mea postulant definiebas
+          concludaturque. Id qui malis abhorreant, mazim melius quo et. At eam altera dolorum, case dicant lobortis ius
+          te, ad vel affert oportere reprehendunt. Quo no verterem deseruisse, mea brute postea te, ne per tacimates
+          suavitate vituperatoribus.</p>
+        <hr />
+      </section>
+      <section class="js-section">
+        <h3 class="section__title">Keybindings</h3>
+        <p>Lorem ipsum dolor sit amet, scripta tibique indoctum sit ei, mel inani aeterno ad. Facer oratio ex per. At
+          eam movet verear, in sea brute patrioque disputando, usu nonumes torquatos an. Ex his quaerendum intellegebat,
+          ut vel homero accusam. Eum at debet tibique, in vocibus temporibus adversarium sed. Porro verear eu vix, ne
+          usu tation vituperata.</p>
+        <p>Malis percipitur an pro. Pro aperiam persequeris at, at sonet sensibus mei, id mea postulant definiebas
+          concludaturque. Id qui malis abhorreant, mazim melius quo et. At eam altera dolorum, case dicant lobortis ius
+          te, ad vel affert oportere reprehendunt. Quo no verterem deseruisse, mea brute postea te, ne per tacimates
+          suavitate vituperatoribus.</p>
+        <p>Malis percipitur an pro. Pro aperiam persequeris at, at sonet sensibus mei, id mea postulant definiebas
+          concludaturque. Id qui malis abhorreant, mazim melius quo et. At eam altera dolorum, case dicant lobortis ius
+          te, ad vel affert oportere reprehendunt. Quo no verterem deseruisse, mea brute postea te, ne per tacimates
+          suavitate vituperatoribus.</p>
+        <hr />
+      </section>
+      <section class="js-section">
+        <h3 class="section__title">Issues</h3>
+        <p>Lorem ipsum dolor sit amet, scripta tibique indoctum sit ei, mel inani aeterno ad. Facer oratio ex per. At
+          eam movet verear, in sea brute patrioque disputando, usu nonumes torquatos an. Ex his quaerendum intellegebat,
+          ut vel homero accusam. Eum at debet tibique, in vocibus temporibus adversarium sed. Porro verear eu vix, ne
+          usu tation vituperata.</p>
+        <p>Malis percipitur an pro. Pro aperiam persequeris at, at sonet sensibus mei, id mea postulant definiebas
+          concludaturque. Id qui malis abhorreant, mazim melius quo et. At eam altera dolorum, case dicant lobortis ius
+          te, ad vel affert oportere reprehendunt. Quo no verterem deseruisse, mea brute postea te, ne per tacimates
+          suavitate vituperatoribus.</p>
+      </section>
+    </article>
+  </div>
 
-      <h2>Website</h2>
-      <p>For detailed documentation, functionality breakdowns, and release notes, visit our website:</p>
-      <a href="https://your-website-link.com">Feature Website</a>
+  <!--<footer class="footer">XYZ is a script library for Roblox made exclusively by @ftnick</footer>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="./resources/js/script.js"></script>
+</body>
 
-      <h2>Getting Started</h2>
-      <p>To get started with Feature, follow these steps:</p>
-      <ol>
-        <li>Clone the repository:
-          <pre><code>git clone https://github.com/your-username/feature.git</code></pre>
-        </li>
-        <li>Navigate to the project directory:
-          <pre><code>cd feature</code></pre>
-        </li>
-        <li>Install dependencies (if any):
-          <pre><code>pip install -r requirements.txt</code></pre>
-        </li>
-        <li>Use <code>require.py</code> to access features:
-          <pre><code>from require import feature_function</code></pre>
-        </li>
-      </ol>
-
-      <h2>Contributing</h2>
-      <p>We welcome contributions from the community. Please feel free to submit bug reports, feature requests, or pull requests on our GitHub repository.</p>
-
-      <h2>Reporting Bugs</h2>
-      <p>If you encounter any bugs, please open an issue on our GitHub repository:</p>
-      <a href="https://github.com/your-username/feature/issues">Report an Issue</a>
-
-      <h2>License</h2>
-      <p>This project is licensed under the terms of the <a href="LICENSE.md">MIT License</a>.</p>
-    </main>
-  </body>
 </html>
