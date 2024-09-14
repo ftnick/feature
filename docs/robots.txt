@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /resources/
+Sitemap: https://feature.ftnick.xyz/sitemap.xml
