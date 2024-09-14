@@ -16,7 +16,7 @@ class LoggerManager:
         logger = logging.getLogger(self.name)
         logger.setLevel(logging.DEBUG)
         
-        file_handler = logging.FileHandler(os.path.join(os.environ['USERPROFILE'], 'AppData', 'Roaming', 'XEXUS-APP-DATA', 'logs', f'{self.name}.log'), mode=file_mode ,encoding='utf-8')
+        file_handler = logging.FileHandler(os.path.join(os.environ['USERPROFILE'], 'AppData', 'Roaming', 'featuredata', 'logs', f'{self.name}.log'), mode=file_mode ,encoding='utf-8')
         file_handler.setLevel(logging.DEBUG)
         
         console_handler = logging.StreamHandler()
