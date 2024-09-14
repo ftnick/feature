@@ -1,6 +1,6 @@
-# Feature (fē-uh-tor)
+# feature (fē-uh-tor)
 
-**Feature** is an open-source framework designed to assist in various programming tasks.
+**feature** is an open-source framework designed to assist in various programming tasks.
 
 ## For a detailed getting started guide, please visit our website:  
 ## https://feature.ftnick.xyz
