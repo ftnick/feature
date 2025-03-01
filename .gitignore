@@ -1,1 +1,3 @@
-local/
+src/
+logs/
+__pycache__/
